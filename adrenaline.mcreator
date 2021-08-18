@@ -80,6 +80,16 @@
       "ids": {},
       "registry_name": "animals",
       "path": "~/Tags"
+    },
+    {
+      "name": "Projectiles",
+      "type": "tag",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "projectiles",
+      "path": "~/Tags"
     }
   ],
   "variable_elements": [],

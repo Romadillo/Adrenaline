@@ -1,0 +1,50 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "EntityDragonFireball"
+      },
+      {
+        "value": "EntityEnderEye"
+      },
+      {
+        "value": "EntityEnderPearl"
+      },
+      {
+        "value": "EntityFireball"
+      },
+      {
+        "value": "EntityFireworkRocket"
+      },
+      {
+        "value": "EntityLlamaSpit"
+      },
+      {
+        "value": "EntityShulkerBullet"
+      },
+      {
+        "value": "EntitySmallFireball"
+      },
+      {
+        "value": "EntitySnowball"
+      },
+      {
+        "value": "EntitySpectralArrow"
+      },
+      {
+        "value": "EntityTrident"
+      },
+      {
+        "value": "EntityTNTPrimed"
+      }
+    ],
+    "name": "projectiles",
+    "namespace": "forge"
+  }
+}
