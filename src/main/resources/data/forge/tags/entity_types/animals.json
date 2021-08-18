@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "bat",
+    "bee",
+    "cat",
+    "chicken",
+    "cod",
+    "cow",
+    "donkey",
+    "dolphin",
+    "fox",
+    "horse",
+    "llama",
+    "mooshroom",
+    "mule",
+    "ocelot",
+    "panda",
+    "parrot",
+    "pig",
+    "pufferfish",
+    "polar_bear",
+    "rabbit",
+    "salmon",
+    "sheep",
+    "squid",
+    "trader_llama",
+    "tropical_fish",
+    "turtle",
+    "wolf"
+  ]
+}

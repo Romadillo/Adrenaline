@@ -1,0 +1,95 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "EntityBat"
+      },
+      {
+        "value": "EntityBee"
+      },
+      {
+        "value": "EntityCat"
+      },
+      {
+        "value": "EntityChicken"
+      },
+      {
+        "value": "EntityCod"
+      },
+      {
+        "value": "EntityCow"
+      },
+      {
+        "value": "EntityDonkey"
+      },
+      {
+        "value": "EntityDolphin"
+      },
+      {
+        "value": "EntityFox"
+      },
+      {
+        "value": "EntityHorse"
+      },
+      {
+        "value": "EntityLlama"
+      },
+      {
+        "value": "EntityMooshroom"
+      },
+      {
+        "value": "EntityMule"
+      },
+      {
+        "value": "EntityOcelot"
+      },
+      {
+        "value": "EntityPanda"
+      },
+      {
+        "value": "EntityParrot"
+      },
+      {
+        "value": "EntityPig"
+      },
+      {
+        "value": "EntityPufferfish"
+      },
+      {
+        "value": "EntityPolarBear"
+      },
+      {
+        "value": "EntityRabbit"
+      },
+      {
+        "value": "EntitySalmon"
+      },
+      {
+        "value": "EntitySheep"
+      },
+      {
+        "value": "EntitySquid"
+      },
+      {
+        "value": "EntityTraderLlama"
+      },
+      {
+        "value": "EntityTropicalFish"
+      },
+      {
+        "value": "EntityTurtle"
+      },
+      {
+        "value": "EntityWolf"
+      }
+    ],
+    "name": "animals",
+    "namespace": "forge"
+  }
+}

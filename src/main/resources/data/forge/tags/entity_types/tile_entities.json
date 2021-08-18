@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "armor_stand",
+    "item_frame",
+    "minecart",
+    "chest_minecart",
+    "command_block_minecart",
+    "zombie",
+    "furnace_minecart",
+    "hopper_minecart",
+    "spawner_minecart",
+    "tnt_minecart"
+  ]
+}

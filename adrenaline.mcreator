@@ -1,6 +1,87 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "EntityDistanceBoosts",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "entity_distance_boosts",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_blocks",
+      "path": "~/Tags"
+    },
+    {
+      "name": "LogBlocks",
+      "type": "tag",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "log_blocks",
+      "path": "~/Tags"
+    },
+    {
+      "name": "HostileMobs",
+      "type": "tag",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hostile_mobs",
+      "path": "~/Tags"
+    },
+    {
+      "name": "TileEntities",
+      "type": "tag",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tile_entities",
+      "path": "~/Tags"
+    },
+    {
+      "name": "Animals",
+      "type": "tag",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "animals",
+      "path": "~/Tags"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
@@ -8,7 +89,16 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Tags",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "adrenaline",
@@ -24,6 +114,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.adrenaline",
     "lockBaseModFiles": false
   },
