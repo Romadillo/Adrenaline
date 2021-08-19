@@ -90,22 +90,129 @@
       "ids": {},
       "registry_name": "projectiles",
       "path": "~/Tags"
+    },
+    {
+      "name": "ShadowStrike",
+      "type": "enchantment",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shadow_strike",
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "ShadowStrikeProcedure",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shadow_strike_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Enchantment Procedures"
+    },
+    {
+      "name": "ShadowStrikeParticle",
+      "type": "particle",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shadow_strike_particle",
+      "path": "~/Particles"
+    },
+    {
+      "name": "ShadowStrikeParticleProcedure",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shadow_strike_particle_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Enchantment Procedures"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "enchantment.adrenaline.shadow_strike": "Shadow Strike"
+    }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
         "name": "Procedures",
-        "children": []
+        "children": [
+          {
+            "name": "Enchantment Procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "Enchantments",
+        "children": []
+      },
+      {
+        "name": "Particles",
         "children": []
       }
     ]
