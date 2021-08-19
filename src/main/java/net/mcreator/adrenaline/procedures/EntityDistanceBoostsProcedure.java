@@ -53,7 +53,7 @@ public class EntityDistanceBoostsProcedure extends AdrenalineModElements.ModElem
 		if ((EntityTypeTags.getCollection().getTagByID(new ResourceLocation(("forge:hostile_mobs").toLowerCase(java.util.Locale.ENGLISH)))
 				.contains(entity.getType()))) {
 			Health = (double) Math.round((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1)
-					* (1 + (Math.sqrt(((x * x) + ((y * y) + (z * z)))) / 100))));
+					* (1 + (Math.sqrt(((x * x) + (((y - 64) * (y - 64)) + (z * z)))) / 100))));
 			((LivingEntity) entity).getAttribute(Attributes.MAX_HEALTH).setBaseValue((Health));
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).setHealth((float) (Health));
