@@ -20,10 +20,6 @@
             "type": "number"
           },
           {
-            "name": "y",
-            "type": "number"
-          },
-          {
             "name": "z",
             "type": "number"
           }
@@ -125,7 +121,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Enchantment Procedures"
+      "path": "~/Procedures/Enchantment Procedures/ShadowStrike"
     },
     {
       "name": "ShadowStrikeParticle",
@@ -169,7 +165,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Enchantment Procedures"
+      "path": "~/Procedures/Enchantment Procedures/ShadowStrike"
     },
     {
       "name": "Beheading",
@@ -217,13 +213,176 @@
           }
         ]
       },
-      "path": "~/Procedures/Enchantment Procedures"
+      "path": "~/Procedures/Enchantment Procedures/Beheading"
+    },
+    {
+      "name": "TraceParticle",
+      "type": "particle",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trace_particle",
+      "path": "~/Particles"
+    },
+    {
+      "name": "Trace",
+      "type": "enchantment",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trace",
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "TraceProcedure",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trace_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Enchantment Procedures/Trace"
+    },
+    {
+      "name": "TraceBowDrawStart",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trace_bow_draw_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Procedures/Bow Draw Detection"
+    },
+    {
+      "name": "BowDrawStop",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bow_draw_stop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Procedures/Bow Draw Detection"
+    },
+    {
+      "name": "MedusasGaze",
+      "type": "enchantment",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "medusas_gaze",
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "MedusasGazeProcedure",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "medusas_gaze_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Enchantment Procedures/MedusasGaze"
+    },
+    {
+      "name": "BowDrawTime",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bow_draw_time",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Bow Draw Detection"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "BowDrawn",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "BowDrawTIme",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "enchantment.adrenaline.medusas_gaze": "Medusa\u0027s Gaze",
+      "enchantment.adrenaline.trace": "Trace",
       "enchantment.adrenaline.beheading": "Beheading",
       "enchantment.adrenaline.shadow_strike": "Shadow Strike"
     }
@@ -236,6 +395,27 @@
         "children": [
           {
             "name": "Enchantment Procedures",
+            "children": [
+              {
+                "name": "ShadowStrike",
+                "children": []
+              },
+              {
+                "name": "Beheading",
+                "children": []
+              },
+              {
+                "name": "Trace",
+                "children": []
+              },
+              {
+                "name": "MedusasGaze",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Bow Draw Detection",
             "children": []
           }
         ]
@@ -272,5 +452,5 @@
     "modElementsPackage": "net.mcreator.adrenaline",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100118117
+  "mcreatorVersion": 202100236710
 }

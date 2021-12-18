@@ -2,14 +2,18 @@
   "_fv": 24,
   "_type": "enchantment",
   "definition": {
-    "name": "Beheading",
-    "type": "WEAPON",
-    "rarity": "UNCOMMON",
+    "name": "Trace",
+    "type": "BOW",
+    "rarity": "RARE",
     "minLevel": 1,
-    "maxLevel": 1,
+    "maxLevel": 3,
     "damageModifier": 0,
     "compatibleEnchantments": [],
-    "compatibleItems": [],
+    "compatibleItems": [
+      {
+        "value": "Items.TRIDENT"
+      }
+    ],
     "isTreasureEnchantment": true,
     "isCurse": false,
     "isAllowedOnBooks": true,

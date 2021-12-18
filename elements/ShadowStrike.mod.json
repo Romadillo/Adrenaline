@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 24,
   "_type": "enchantment",
   "definition": {
     "name": "Shadow Strike",
@@ -12,6 +12,8 @@
     "compatibleItems": [],
     "isTreasureEnchantment": true,
     "isCurse": false,
-    "isAllowedOnBooks": true
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
   }
 }

@@ -3,6 +3,8 @@ package net.mcreator.adrenaline.enchantment;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.enchantment.Enchantment;
@@ -10,20 +12,20 @@ import net.minecraft.enchantment.Enchantment;
 import net.mcreator.adrenaline.AdrenalineModElements;
 
 @AdrenalineModElements.ModElement.Tag
-public class ShadowStrikeEnchantment extends AdrenalineModElements.ModElement {
-	@ObjectHolder("adrenaline:shadow_strike")
+public class TraceEnchantment extends AdrenalineModElements.ModElement {
+	@ObjectHolder("adrenaline:trace")
 	public static final Enchantment enchantment = null;
-	public ShadowStrikeEnchantment(AdrenalineModElements instance) {
-		super(instance, 8);
+	public TraceEnchantment(AdrenalineModElements instance) {
+		super(instance, 15);
 	}
 
 	@Override
 	public void initElements() {
-		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("shadow_strike"));
+		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("trace"));
 	}
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
-			super(Enchantment.Rarity.UNCOMMON, EnchantmentType.WEAPON, slots);
+			super(Enchantment.Rarity.RARE, EnchantmentType.BOW, slots);
 		}
 
 		@Override
@@ -33,7 +35,14 @@ public class ShadowStrikeEnchantment extends AdrenalineModElements.ModElement {
 
 		@Override
 		public int getMaxLevel() {
-			return 2;
+			return 3;
+		}
+
+		@Override
+		public boolean canApplyAtEnchantingTable(ItemStack stack) {
+			if (stack.getItem() == Items.TRIDENT)
+				return true;
+			return false;
 		}
 
 		@Override

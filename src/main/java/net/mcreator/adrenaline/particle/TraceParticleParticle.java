@@ -19,11 +19,11 @@ import net.minecraft.client.particle.IAnimatedSprite;
 import net.minecraft.client.Minecraft;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class ShadowStrikeParticleParticle {
+public class TraceParticleParticle {
 	public static final BasicParticleType particle = new BasicParticleType(true);
 	@SubscribeEvent
 	public static void registerParticleType(RegistryEvent.Register<ParticleType<?>> event) {
-		event.getRegistry().register(particle.setRegistryName("shadow_strike_particle"));
+		event.getRegistry().register(particle.setRegistryName("trace_particle"));
 	}
 
 	@OnlyIn(Dist.CLIENT)
@@ -38,19 +38,19 @@ public class ShadowStrikeParticleParticle {
 			super(world, x, y, z);
 			this.spriteSet = spriteSet;
 			this.setSize((float) 0.2, (float) 0.2);
-			this.particleScale *= (float) 0.6;
-			this.maxAge = (int) Math.max(1, 60 + (this.rand.nextInt(40) - 20));
-			this.particleGravity = (float) 0.02;
-			this.canCollide = true;
-			this.motionX = vx * 1;
-			this.motionY = vy * 1;
-			this.motionZ = vz * 1;
+			this.particleScale *= (float) 0.2;
+			this.maxAge = 1;
+			this.particleGravity = (float) 0;
+			this.canCollide = false;
+			this.motionX = vx * 0;
+			this.motionY = vy * 0;
+			this.motionZ = vz * 0;
 			this.selectSpriteRandomly(spriteSet);
 		}
 
 		@Override
 		public IParticleRenderType getRenderType() {
-			return IParticleRenderType.PARTICLE_SHEET_OPAQUE;
+			return IParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
 		}
 
 		@Override

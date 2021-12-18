@@ -2,14 +2,21 @@
   "_fv": 24,
   "_type": "enchantment",
   "definition": {
-    "name": "Beheading",
+    "name": "Medusa's Gaze",
     "type": "WEAPON",
-    "rarity": "UNCOMMON",
+    "rarity": "VERY_RARE",
     "minLevel": 1,
-    "maxLevel": 1,
+    "maxLevel": 3,
     "damageModifier": 0,
     "compatibleEnchantments": [],
-    "compatibleItems": [],
+    "compatibleItems": [
+      {
+        "value": "Items.BOW"
+      },
+      {
+        "value": "Items.CROSSBOW"
+      }
+    ],
     "isTreasureEnchantment": true,
     "isCurse": false,
     "isAllowedOnBooks": true,
