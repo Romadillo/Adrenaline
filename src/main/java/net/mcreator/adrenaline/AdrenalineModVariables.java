@@ -69,6 +69,9 @@ public class AdrenalineModVariables {
 			CompoundNBT nbt = new CompoundNBT();
 			nbt.putBoolean("BowDrawn", instance.BowDrawn);
 			nbt.putDouble("BowDrawTIme", instance.BowDrawTIme);
+			nbt.putDouble("DoubleJumpCharge", instance.DoubleJumpCharge);
+			nbt.putDouble("DoubleJumpHeight", instance.DoubleJumpHeight);
+			nbt.putDouble("DoubleJumpJumps", instance.DoubleJumpJumps);
 			return nbt;
 		}
 
@@ -77,12 +80,18 @@ public class AdrenalineModVariables {
 			CompoundNBT nbt = (CompoundNBT) inbt;
 			instance.BowDrawn = nbt.getBoolean("BowDrawn");
 			instance.BowDrawTIme = nbt.getDouble("BowDrawTIme");
+			instance.DoubleJumpCharge = nbt.getDouble("DoubleJumpCharge");
+			instance.DoubleJumpHeight = nbt.getDouble("DoubleJumpHeight");
+			instance.DoubleJumpJumps = nbt.getDouble("DoubleJumpJumps");
 		}
 	}
 
 	public static class PlayerVariables {
 		public boolean BowDrawn = false;
 		public double BowDrawTIme = 0;
+		public double DoubleJumpCharge = 0;
+		public double DoubleJumpHeight = 0;
+		public double DoubleJumpJumps = 0;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				AdrenalineMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity),
@@ -117,6 +126,9 @@ public class AdrenalineModVariables {
 		PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 		clone.BowDrawn = original.BowDrawn;
 		clone.BowDrawTIme = original.BowDrawTIme;
+		clone.DoubleJumpCharge = original.DoubleJumpCharge;
+		clone.DoubleJumpHeight = original.DoubleJumpHeight;
+		clone.DoubleJumpJumps = original.DoubleJumpJumps;
 		if (!event.isWasDeath()) {
 		}
 	}
@@ -143,6 +155,9 @@ public class AdrenalineModVariables {
 							.orElse(new PlayerVariables()));
 					variables.BowDrawn = message.data.BowDrawn;
 					variables.BowDrawTIme = message.data.BowDrawTIme;
+					variables.DoubleJumpCharge = message.data.DoubleJumpCharge;
+					variables.DoubleJumpHeight = message.data.DoubleJumpHeight;
+					variables.DoubleJumpJumps = message.data.DoubleJumpJumps;
 				}
 			});
 			context.setPacketHandled(true);

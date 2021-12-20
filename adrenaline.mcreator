@@ -392,6 +392,37 @@
       "ids": {},
       "registry_name": "double_jump_jump",
       "path": "~/Enchantments"
+    },
+    {
+      "name": "DoubleJumpCharge",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "double_jump_charge",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Enchantment Procedures/Double Jump"
+    },
+    {
+      "name": "DoubleJumpProcedure",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "double_jump_procedure",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Procedures/Enchantment Procedures/Double Jump"
     }
   ],
   "variable_elements": [
@@ -403,6 +434,24 @@
     },
     {
       "name": "BowDrawTIme",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "DoubleJumpCharge",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "DoubleJumpHeight",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "DoubleJumpJumps",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -443,6 +492,10 @@
               },
               {
                 "name": "MedusasGaze",
+                "children": []
+              },
+              {
+                "name": "Double Jump",
                 "children": []
               }
             ]
