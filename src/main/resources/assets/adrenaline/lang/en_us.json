@@ -1,6 +1,9 @@
 {
   "enchantment.adrenaline.medusas_gaze": "Medusa\u0027s Gaze",
+  "enchantment.adrenaline.double_jump": "Double Jump",
+  "enchantment.adrenaline.double_jump_height": "Double Jump: Height",
   "enchantment.adrenaline.trace": "Trace",
   "enchantment.adrenaline.beheading": "Beheading",
+  "enchantment.adrenaline.double_jump_jump": "Double Jump: Jump",
   "enchantment.adrenaline.shadow_strike": "Shadow Strike"
 }

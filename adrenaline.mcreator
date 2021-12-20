@@ -362,6 +362,36 @@
         ]
       },
       "path": "~/Procedures/Bow Draw Detection"
+    },
+    {
+      "name": "DoubleJump",
+      "type": "enchantment",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "double_jump",
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "DoubleJumpHeight",
+      "type": "enchantment",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "double_jump_height",
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "DoubleJumpJump",
+      "type": "enchantment",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "double_jump_jump",
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
@@ -382,8 +412,11 @@
   "language_map": {
     "en_us": {
       "enchantment.adrenaline.medusas_gaze": "Medusa\u0027s Gaze",
+      "enchantment.adrenaline.double_jump": "Double Jump",
+      "enchantment.adrenaline.double_jump_height": "Double Jump: Height",
       "enchantment.adrenaline.trace": "Trace",
       "enchantment.adrenaline.beheading": "Beheading",
+      "enchantment.adrenaline.double_jump_jump": "Double Jump: Jump",
       "enchantment.adrenaline.shadow_strike": "Shadow Strike"
     }
   },
